@@ -7,17 +7,45 @@ body {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* -------------------common ------------------------  */
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 /* --------------------HEADER--------------- */
 .header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
 }
 
 .header-nav {
+  display: flex;
+  align-items: center;
 }
 
 .header-logo {
@@ -28,6 +56,8 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  padding: 24px 0;
+  margin-right: 76px;
 }
 
 .header-logo-span {
@@ -35,6 +65,9 @@ a {
 }
 
 .header-menu-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .header-menu-item {
@@ -46,13 +79,19 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
+  display: block;
 }
 
 .address {
   font-style: normal;
+  margin-left: auto;
 }
 
 .header-address-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .header-address-item {
@@ -63,6 +102,8 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  display: block;
+  padding: 24px 0;
 }
 
 .header-menu-link:hover,
